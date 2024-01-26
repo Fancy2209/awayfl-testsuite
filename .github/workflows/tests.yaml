@@ -14,4 +14,4 @@ jobs:
           with:
             cmd: install
         - name: Test the app
-          run: "& C:\npm\prefix\yarn.cmd testServer & C:\npm\prefix\yarn.cmd test"
+          run: r"& C:\npm\prefix\yarn.cmd testServer & C:\npm\prefix\yarn.cmd test"
