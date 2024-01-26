@@ -4,9 +4,9 @@ jobs:
   Test_Run:
     runs-on: windows-latest
     steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v4
         - name: Use Node.js 20.x
-          uses: actions/setup-node@v1
+          uses: actions/setup-node@v4
           with:
             node-version: '20.x'
         - name: Test the app
