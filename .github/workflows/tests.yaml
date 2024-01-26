@@ -10,6 +10,6 @@ jobs:
           with:
             node-version: '20.x'
         - name: Install Deps
-          run: "npm i -g yarn"
+          run: "npm i -g yarn && yarn install"
         - name: Run Tests
           run: "yarn run testServer & yarn run test"
