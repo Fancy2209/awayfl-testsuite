@@ -9,11 +9,9 @@ jobs:
           uses: actions/setup-node@v4
           with:
             node-version: '20.x'
-        - name: Test the app
+        - name: Install Deps
           uses: borales/actions-yarn@v4
           with:
             cmd: install
         - name: Test the app
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: test & testServer
+          run: "& C:\npm\prefix\yarn.cmd testServer & C:\npm\prefix\yarn.cmd test"
